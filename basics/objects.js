@@ -28,3 +28,12 @@ console.log(Object.values(tinderuser));
 console.log(tinderuser.hasOwnProperty('isLoggedIn')); 
 //Object.hasOwnProperty() whether a particular attribute is present 
 
+const course={
+    coursename:'javascript',
+    price:'999',
+    instructor:'Youtube'
+}
+//course.coursename
+const{instructor:inst}=course  //extract instructor from course
+console.log(inst);
+//Object Destructuring in js
