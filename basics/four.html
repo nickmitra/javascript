@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style = "background-color: black; color :azure">
+    <ul class="langauge">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+
+    function addlang(name) {
+        const li=document.createElement('li'); 
+        li.innerHTML=`${name}`
+        const val=document.querySelector('.language').appendChild('li');
+    }
+
+    addlang('python')
+    addlang('c++')
+    addlang('typescript')
+
+    function addOpti(lang){
+    const li =document.createElement('li');
+    li.appendChild(document.createTextNode(lang))
+    document.querySelector('.language').appendChild('li')
+    } 
+    addOpti('GoLang')
+    //Edit
+
+    const selectlang= document.querySelector("li:nth-child(2)");
+    selectlang.innerHTMl="Mojo"
+    const newli = document.createElement('li');
+    newli.innerText="NOdejs"
+    selectlang.replaceWith(newli)
+
+    const firstlang= document.querySelector("li:first-child")
+
+</script>
+
+</html>
