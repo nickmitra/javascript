@@ -6,6 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Chai aur code</h1>
+    <button id='stop'>Stop</button> 
+    the id of the button is given stop indorder to access it using id via the querySelector
+
 </body>
+<script>
+    const sayName=function() {
+        console.log('Hitesh');
+        
+    }
+    //setTimeout(sayName,2000) //through browser , just reference
+    //change doc name from h1
+    const changeTitle = function(){document.querySelector('h1').innerHTML="Best Js Series"}
+    const changeMe=setTimeout(changeTitle,2000);
+
+    document.querySelector('#stop').addEventListener('click',function () {
+        clearTimeout(changeMe);
+        console.log("Stopped");
+        
+    })
+</script>
 </html>
