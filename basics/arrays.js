@@ -59,3 +59,5 @@ console.log(num2);
 const mytotal =num2.reduce(()=>(acc,curr)=> acc+curr,0);
 
 
+//document.getElementById.('abc').onclick=function name(params) {
+//}
