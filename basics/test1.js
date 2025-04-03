@@ -33,3 +33,27 @@ console.log(url.includes('codi'))
 const varname="sagnik-mitra-vit-vellore"
 console.log(varname.split('-'));
 
+class User{
+    constructor(username,email,password){
+        this.username=username;
+        this.email=email;
+        this.password=password;
+    }
+
+    //a function in the class
+    encryptpass(){
+        return `${this.password}abcxyz`
+    }
+    changeUsename(){
+        return `${this.username.toUpperCase()}`
+    }
+}
+const chai= new User('chai','chai123@gmail.com','nopassword');
+console.log(chai.encryptpass());
+console.log(chai.changeUsename());
+//for user i can use prototype as well is i say function User(username,email,pass){} 
+//and for the methods ,i use User.prototype.method()
+//check instance console.log(chai instanceof user)
+
+document.querySelector('button').addEventListener('click',this.handleclick()).bind(this)
+//handleclick function defined here 
